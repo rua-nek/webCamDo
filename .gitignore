@@ -1,0 +1,5 @@
+node_modules/
+public/uploads/
+src/app/config/
+.env
+package-lock.json
