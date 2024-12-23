@@ -14,7 +14,7 @@ class HomeConTroller {
 
         Admin.findOne({ TenDangNhap, MatKhau }).then(admin => {
             if (admin) {
-                res.render('dataAggregator');
+                res.render('dataAggregator', {layout: 'dataAggregator'});
             } else {
                 res.status(401).send('Invalid credentials');
             }

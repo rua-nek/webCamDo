@@ -4,6 +4,6 @@ const dataAggregator = require('./dataAggregator');
 function route(app) {
     app.use('/dataAggregator', dataAggregator);
     app.use('/test', test);
-    app.use('/home', home);
+    app.use('/', home);
 }
 module.exports = route;
