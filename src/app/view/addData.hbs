@@ -1,0 +1,83 @@
+<!-- filepath: /c:/Hmm/nodejs/webCamDo/src/app/view/addData.hbs -->
+<div class="container-fluid py-5 h-100">
+    <div class="row">
+        <h3 class="text-center">Nhập Thông Tin</h3>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            <h1>Admin</h1>
+            <ul class="list-group pt-3">
+                <a href="#"><li class="list-group-item">Thông tin khách hàng</li></a>
+                <a href="#"><li class="list-group-item">Hóa đơn</li></a>
+            </ul>
+        </div>
+        <div class="col-9">
+            <form action="/addData" method="post" enctype="multipart/form-data">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example1">Họ Tên</label>
+                            <input type="text" id="form6Example1" class="form-control" name="HoTen" required />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example2">Địa Chỉ</label>
+                            <input type="text" id="form6Example2" class="form-control" name="DiaChi" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example3">Số Điện Thoại</label>
+                            <input type="text" id="form6Example3" class="form-control" name="SoDienThoai" required />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example4">CMND</label>
+                            <input type="text" id="form6Example4" class="form-control" name="CMND" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example3">Tên Vật Phẩm</label>
+                            <input type="text" id="form6Example3" class="form-control" name="TenVatPham" required />
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline">
+                            <label class="form-label" for="form6Example4">Mô tả</label>
+                            <input type="text" id="form6Example4" class="form-control" name="MoTa" required />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <!-- File input -->
+                    <div class="col">
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="form6Example5">Hình Ảnh</label>
+                            <input type="file" id="form6Example5" class="form-control" name="HinhAnh" />
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <!-- Text input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="form6Example6">Giá Trị</label>
+                            <input type="text" id="form6Example6" class="form-control" name="GiaTri" required />
+                        </div>
+                    </div>
+                </div>
+                <!-- Nút submit -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
